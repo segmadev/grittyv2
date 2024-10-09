@@ -1,0 +1,779 @@
+* {
+    margin: 0;
+    
+}
+section{
+  overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@font-face {
+    font-family: "Avenir Next Cyr";
+    src: url("../assets/fonts/AvenirNextCyr-Regular.ttf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Avenir Next Cyr";
+    src: url("../assets/fonts/AvenirNextCyr-Bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../assets/fonts/Gilroy-Bold.ttf");
+    font-weight: 700;
+  }
+  /* @font-face {
+    font-family: "Abril Fatface";
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+
+  
+:root {
+    /* fonts */
+    --font-avenir-next-cyr: "Avenir Next Cyr";
+    --font-gilroy: "Gilroy";
+    --font-abril-fatface: "Abril Fatface",
+  /* font weight */
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  /* line heights */
+  --line-height-lg: 1.5;
+  --line-height-md: 1.2;
+  --line-height-sm: 1.125;
+  /* letter spacings */
+  --letter-spacing-normal: 0;
+  --letter-spacing-sm: 0.05em;
+  /* padding */
+  --padding-sm: 0.5rem;
+  --padding-md: 1rem;
+  --padding-lg: 1.5rem;
+  --padding-xl: 2rem;
+  --padding-xxl: 2.5rem;
+  /* margin */
+  --margin-sm: 0.5rem;
+  --margin-md: 1rem;
+  --margin-lg: 1
+    /* font sizes */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-5xl: 1.5rem; /* 24px */
+    --font-size-lgi: 1.1875rem; /* 19px */
+    --font-size-45xl: 4rem; /* 64px */
+    --font-size-19xl: 2.375rem; /* 38px */
+    --font-size-32xl: 3.1875rem; /* 51px */
+    --font-size-mini: 0.9375rem; /* 15px */
+    --font-size-mid: 1.0625rem; /* 17px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-13xl: 2rem; /* 32px */
+    --font-size-7xl: 1.625rem; /* 26px */
+    --font-size-sm: 0.875rem; /* 14px */
+  
+    /* Colors */
+    --primary-1: #007bff;
+    --background: #fafafa;
+    --grey-1: #828282;
+    --color-grey-60: #767676;
+    --color-gray-100: #1c1e1f;
+    --color-gray-200: #1a1a1a;
+    --color-gray-300: #141414;
+    --color-gray-400: rgba(30, 40, 50, 0.5);
+    --color-gray-500: rgba(30, 30, 30, 0.8);
+    --color-gainsboro-100: #e6e6e6;
+    --color-gainsboro-200: #e0e0e0;
+    --color-gainsboro-300: rgba(224, 224, 224, 0.09);
+    --primary-2: #ff6f00;
+    --primary-2-light: #ff6f001f;
+    --color-darkorange-100: rgba(255, 140, 0, 0.8);
+    --color-orangered: #e65700;
+    --color-white: #fff;
+    --secondary: #2c3e50;
+    --black: #2d2d2d;
+    --color-darkslategray-100: rgba(44, 62, 80, 0.5);
+    --color-darkslategray-200: rgba(44, 62, 80, 0.8);
+    --dropdown-demarcators: #dde3f0;
+    --color-whitesmoke-100: #f4f5f8;
+    --color-whitesmoke-200: #ededed;
+    --color-cornflowerblue: #26a1ff;
+    --color-lightgray: #d2d2d2;
+    --color-dodgerblue: #0a85ff;
+    --color-orange: rgba(255, 157, 0, 0.8);
+  
+    /* Gaps */
+    --gap-5xl: 24px;
+    --gap-45xl: 64px;
+    --gap-13xl: 32px;
+    --gap-35xl: 54px;
+    --gap-xl: 20px;
+    --gap-19xl: 38px;
+    --gap-lgi: 19px;
+    --gap-9xl: 28px;
+    --gap-mid: 17px;
+    --gap-3xs: 10px;
+    --gap-2xs: 11px;
+    --gap-base: 16px;
+    --gap-49xl: 68px;
+    --gap-15xl: 34px;
+    --gap-21xl: 40px;
+    --gap-27xl: 46px;
+    --gap-4xl: 23px;
+    --gap-5xs: 8px;
+    --gap-98xl: 117px;
+    --gap-10xl: 29px;
+    --gap-39xl: 58px;
+    --gap-mid-3: 17.3px;
+    --gap-11xl: 30px;
+    --gap-8xl: 27px;
+    --gap-7xl: 26px;
+    --gap-243xl: 262px;
+    --gap-14xl: 33px;
+    --gap-46xl: 65px;
+    --gap-112xl: 131px;
+    --gap-203xl-2: 222.2px;
+    --gap-92xl: 111px;
+  
+    /* Paddings */
+    --padding-sm: 14px;
+    --padding-xl: 20px;
+    --padding-3xl: 22px;
+    --padding-44xl: 63px;
+    --padding-5xl: 24px;
+    --padding-26xl: 45px;
+    --padding-11xs: 2px;
+    --padding-54xl: 73px;
+    --padding-7xs: 6px;
+    --padding-102xl-5: 121.5px;
+    --padding-8xs: 5px;
+    --padding-2xl: 21px;
+    --padding-60xl: 79px;
+    --padding-32xl: 51px;
+    --padding-226xl: 245px;
+    --padding-140xl: 159px;
+    --padding-19xl: 38px;
+    --padding-38xl: 57px;
+    --padding-81xl: 100px;
+    --padding-23xl: 42px;
+    --padding-46xl: 65px;
+    --padding-9xl: 28px;
+    --padding-68xl: 87px;
+    --padding-13xl: 32px;
+    --padding-27xl: 46px;
+    --padding-11xl: 30px;
+    --padding-6xl: 25px;
+    --padding-31xl: 50px;
+    --padding-103xl-5: 122.5px;
+    --padding-base: 16px;
+    --padding-30xl: 49px;
+    --padding-41xl: 60px;
+    --padding-8xl: 27px;
+    --padding-21xl: 40px;
+    --padding-12xs: 1px;
+    --padding-4xl: 23px;
+    --padding-2xs: 11px;
+    --padding-61xl: 80px;
+    --padding-33xl: 52px;
+    --padding-12xl: 31px;
+    --padding-12xs-5: 0.5px;
+    --padding-717xl: 736px;
+    --padding-165xl: 184px;
+    --padding-349xl: 368px;
+    --padding-43xl-5: 62.5px;
+    --padding-84xl: 103px;
+    --padding-159xl: 178px;
+    --padding-45xl-2: 64.2px;
+    --padding-6xs: 7px;
+    --padding-7xs-3: 5.3px;
+    --padding-28xl: 47px;
+    --padding-base-4: 16.4px;
+    --padding-7xl-7: 26.7px;
+    --padding-70xl-5: 89.5px;
+    --padding-50xl: 69px;
+    --padding-10xl: 29px;
+    --padding-43xl: 62px;
+  
+    /* Border radiuses */
+    --br-101xl: 120px;
+    --br-31xl: 50px;
+    --br-xl: 20px;
+    --br-215xl: 234px;
+    --br-sm-3: 13.3px;
+    --br-13xl-6: 32.6px;
+    --br-mini: 15px;
+    --br-lgi-3: 19.3px;
+    --br-mid-1: 17.1px;
+    --br-15xl-2: 34.2px;
+  }
+
+
+  body {
+    font-family: "Abril Fatface", serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+ 
+  h1 {
+    font-family: var(--font-gilroy);
+    font-size: var(--font-size-45xl);
+    font-weight: var(--font-weight-bold);
+  }
+
+  h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+h3 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+  p {
+    font-size: var(--font-size-xl);
+  }
+  .btn-round {
+    border-radius: 100px;
+  }
+  .btn-warning {
+    background-color: var(--primary-2);
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  .btn-p {
+    padding: 10px 32px;
+    text-align: center;
+    text-justify: auto;
+  }
+  .btn-outline-white {
+    border: 1px solid white;
+    color: white;
+  }
+  .container {
+    padding: 20px;
+  }
+  
+  /* hero section */
+  .hero {
+    background-color: var(--primary-1);
+    background-position: 0;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    color: white;
+  }
+
+  /* .hero .container {
+    padding-top: 70px;
+  } */
+  .logo img {
+    width: 234px;
+  }
+
+  .image-content-columns img {
+    width: 200px;
+  }
+
+  .image-content-columns img {
+    opacity: 1;
+    transition: opacity 0.7s ease, transform 0.7s ease; /* Default transition */
+}
+
+/* Animation classes for different directions */
+.from-left {
+    transform: translateX(-100%);
+}
+
+.from-right {
+    transform: translateX(100%);
+}
+
+.from-top {
+    transform: translateY(-100%);
+}
+
+.from-bottom {
+    transform: translateY(100%);
+}
+
+/* When active, the images will slide into view */
+.active img {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+
+ 
+  /* why use */
+ 
+  .features {
+    position: relative;
+
+    /* background-color: yellow; */
+  }
+  
+  .ellipse {
+    position: relative; /* Set to relative for positioning child elements */
+    width: 450px; /* Width of the largest ellipse */
+    height: 450px; /* Height of the largest ellipse */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    margin: 0 auto; /* Center the parent container */
+  }
+.ellipse-div {
+    position: absolute; /* Position absolute for overlap */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Offset to true center */
+    border-radius: 50%; /* Make it a circle */
+     /* Set opacity */
+     z-index: 10;
+    border: 2px solid var(--primary-2); /* Use your primary color for the border */
+}
+
+.ellipse-div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    /* opacity: 0.4; */
+}
+
+.ellipse-div:nth-child(2) {
+    width: 80%;
+    height: 80%;
+    border-width: 1.5px;
+}
+
+.ellipse-div:nth-child(3) {
+    width: 60%;
+    height: 60%;
+}
+
+
+ 
+  /* .ellipse-parent {
+    position: absolute;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+  } */
+  .ellipse-group img, .ellipse-parent img {
+    scale: 0.7;
+  }
+
+  .ellipse-group {
+    margin-left: -25px;
+    margin-top: 50%;
+    width: 120%;
+    /* background-color: #007bff; */
+    justify-content: space-between;
+    display: flex;
+    /* position: relative; */
+  }
+
+  .ellipse-div:nth-child(2)   .ellipse-group {
+    margin-left: 0px;
+    margin-top: 5%;
+    width: 100%;
+    height: 90px;
+    /* background-color: green; */
+}
+
+.ellipse-div:nth-child(2)   img.rectangle-icon5 {
+    /* position: absolute; */
+    scale: 0.5;
+    margin-bottom: -50px;
+    margin-left: -40px;
+  }
+
+  .ellipse-div:nth-child(2)   img.rectangle-icon6 {
+    /* position: absolute; */
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+
+
+  .ellipse-div:nth-child(1)   .ellipse-group {
+    margin-left: 0px;
+    margin-top: 63%;
+    width: 100%;
+    height: 90px;
+    
+    /* background-color: green; */
+}
+
+.ellipse-div:nth-child(1)   img.rectangle-icon5 {
+    /* position: absolute; */
+    scale: 0.4;
+    margin-bottom: -50px;
+    margin-left: -40px;
+  }
+
+  .ellipse-div:nth-child(1)   img.rectangle-icon6 {
+    /* position: absolute; */
+    margin-top: -10px;
+    margin-right: -20px;
+    scale: 0.5;
+  }
+
+  a.feature-title {
+    padding: 20px;
+    border-radius: 5px;
+    width: auto;
+    color: black;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    z-index: 100;
+
+  }
+
+
+/* animation */
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+
+.popup-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.popup-element.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .ellipse-div::before {
+  content: '';
+  border: 4px solid transparent;
+  border-top: 4px solid red;
+  animation: rotateBorder 2s linear infinite;
+} */
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-img-dot {
+  background-image: url('../assets/images/survey-content@3x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story {
+  height: 295px;
+
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.story .center {
+  max-width: 600px;
+  padding-top: 70px;
+}
+.bg-milk {
+  background-color: var(--primary-2-light);
+  
+}
+.bg-blue {
+  background-color: var(--primary-1);
+  z-index: 1;
+  min-height: 500px;
+  color: white;
+}
+.image-flow {
+  position: relative;
+  margin-top: 40px;
+}
+.image-flow img {
+  width: 500px;
+  margin-left: -100px;
+  z-index: 3;
+  position: absolute;
+}
+
+.rec1, .rec2 {
+  position: absolute;
+  background-color: white;
+  opacity: 0.1;
+  width: 220px;
+  height: 270px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.rec2  {
+  right: 200px;
+  top: 40px;
+}
+
+.rec1 {
+  top: -20px;
+  width: 300px;
+}
+/* @media screen and (max-width: 768px) {
+  .story {
+    width: 100%;
+    height: auto; 
+    padding-top: 56.25%; 
+  }
+} */
+button, input {
+  border: none;
+}
+.form button {
+  margin-left: -50px;
+}
+
+.from input {
+  min-width: 100%;
+}
+
+.accordion, .accordion > * {
+  background-color: transparent;
+}
+.accordion-button {
+  background-color: transparent;
+  color: #6c757d; /* Bootstrap muted text color */
+  border-bottom: 1px solid #808080cc ;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-collapse {
+  transition: height 0.4s ease-in-out;
+}
+
+
+.accordion-button:not(.collapsed) {
+  border: none;
+  color: var(--black);
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.accordion-button:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: none; /* Remove any additional focus shadow */
+}
+
+
+.faq {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0px;
+  padding-bottom: 200px;
+  z-index: 1;
+  /* min-width: 5000px; */
+}
+.faq::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 350px; /* Adjust this to control the slant height */
+  background-color: white; /* Match the div's background */
+  clip-path: polygon(0 90%, 100% 64%, 100% 100%, 0% 100%); /* Slant angle; adjust as needed */
+  transform-origin: top left; /* Set the origin of the transformation */
+}
+.img-bar {
+  position: absolute;
+  bottom: 70px;
+  z-index: 5;
+
+}
+.bar-right {
+  right: -50px;
+}
+
+.bar-left {
+  left: -50px;
+  bottom: -5px;
+
+}
+
+.roadmap .col {
+  background-color: var(--color-whitesmoke-100);
+  min-height: 300px;
+  /* max-width: (100% - 100px)!important; */
+  border: 10px solid var(--color-white);
+  position: relative;
+}
+.roadmap .col img{
+  width: 17px;
+  position: absolute;
+}
+.roadmap .col:nth-child(1) img {
+  top: 0;
+  left: 0;
+}
+
+
+.roadmap .col:nth-child(2) img {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg) scaleX(-1);
+  /* -webkit-transform: scaleY(-1); */
+  /* transform: scaleY(-1); */
+}
+
+.roadmap .col:nth-child(3) img {
+  top: 0;
+  right: 0;
+  transform:  scaleX(-1);
+}
+
+.roadmap .col p {
+  font-size: small;
+  font-weight: bold;
+}
+.roadmap ul li {
+    list-style: decimal;
+}
+
+.group-image img {
+  width: min-content;
+  max-width: 170px;
+  display: block;
+  margin-top: 30px;
+}
+
+.relative {
+  position: relative;
+}
+
+.call-image {
+  position: absolute;
+  width: 600px;
+  top: 50px;
+  right: -200px;
+}
+
+.options-image {
+  display: none;
+  position: relative;
+  /* z-index: 1; */
+  min-height: 600px;
+  right: 100%; /* Initially placed outside the viewport to the right */
+  transition: right 0.1s ease-in; /* Smooth sliding transition */
+  opacity:  0;
+}
+.options-image.show {
+  display: block;
+  right: 0; /* Slide the image into view */
+  opacity: 1;  /* Ensure the image becomes visible */
+}
+
+.options-image img {
+  max-width: 400px;
+  z-index: 1;
+  position: absolute;
+}
+
+.options-image::after {
+  content:  '';
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary-2);
+  position: absolute;
+  bottom:20px;
+  left: -30px;
+  border-radius: 100%;
+  z-index: 0;
+}
+
+.options > * {
+  padding: 5px 20px;
+  background-color: var(--color-white);
+  color: var(--color-gray-60);
+  opacity: 0.7;
+  border-left: 4px solid rgb(181, 181, 181) ;
+  font-size: small;
+  font-weight: 400;
+  cursor: pointer;
+  /* font-family: var(--font-abril-fatface); */
+}
+
+.options > *:hover, .options > *.active{
+    opacity: 1;
+    color: var(--black);
+    border-color: var(--primary-1);
+    zoom: 1.1;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+.social-icons img {
+  width: 10px;
+}
+
+
+/* animations */
+
+.slide-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slide-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  opacity: var(--start-opacity);
+  transition: all var(--slide-duration) var(--slide-ease) var(--slide-delay);
+}
+
+/* Slide directions using variables */
+.slide-element[data-slide="left"] {
+  transform: translateX(-100%);
+}
+
+.slide-element[data-slide="right"] {
+  transform: translateX(100%);
+}
+
+.slide-element[data-slide="top"] {
+  transform: translateY(-100%);
+}
+
+.slide-element[data-slide="bottom"] {
+  transform: translateY(100%);
+}
+
+/* Active class that slides the element into view */
+.slide-element.active {
+  transform: translateX(0) translateY(0);
+  opacity: var(--end-opacity);
+}
