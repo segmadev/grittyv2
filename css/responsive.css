@@ -49,6 +49,9 @@
       .scale-sm-8{
         scale: 0.8;
       }
+      .scale-sm-9{
+        scale: 0.9;
+      }
       /* .relative */
       .features {
         /* scale: 0.6; */
@@ -64,6 +67,11 @@
       }
       .img-bar {
         width: 200px;
+      }
+
+      .hero-images-highlight {
+        top: -10px;
+        left: -20px;
       }
   }
   
@@ -91,13 +99,13 @@
 
 
     .img-bar {
-      width: 150px;
+      width: 120px;
     }
     .bar-left {
-        bottom: -24px;
+        bottom: 20px;
     }
     .bar-right {
-        bottom: 30px;
+        bottom: 90px;
     }
     .hero .links, .hero .links a {
       display: block!important;

@@ -264,13 +264,32 @@ h3 {
     color: white;
   }
 
+  .hero-images {
+    position: relative;
+  }
+  .hero-images-highlight {
+    position: absolute;
+    top: -10px;
+    left: 80px;
+    z-index: 2;
+    width: 50px;
+  }
+
   /* .hero .container {
     padding-top: 70px;
   } */
   .logo img {
     width: 234px;
   }
-
+  .image-content-columns:nth-child(1) {
+    position: relative;
+  }
+  .image-content-columns:nth-child(1) img {
+    /* background-color:green; */
+    float: right; 
+    padding: 10px; 
+    margin-right: 10px;
+  }
   .image-content-columns img {
     width: 200px;
   }
@@ -443,16 +462,6 @@ h3 {
 }
 
 
-.popup-element {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.popup-element.in-view {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* .ellipse-div::before {
   content: '';
@@ -729,51 +738,3 @@ button, input {
   width: 10px;
 }
 
-
-/* animations */
-
-.slide-container {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  background-color: #f0f0f0;
-  margin: 50px auto;
-  overflow: hidden;
-}
-
-.slide-element {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #4CAF50;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  opacity: var(--start-opacity);
-  transition: all var(--slide-duration) var(--slide-ease) var(--slide-delay);
-}
-
-/* Slide directions using variables */
-.slide-element[data-slide="left"] {
-  transform: translateX(-100%);
-}
-
-.slide-element[data-slide="right"] {
-  transform: translateX(100%);
-}
-
-.slide-element[data-slide="top"] {
-  transform: translateY(-100%);
-}
-
-.slide-element[data-slide="bottom"] {
-  transform: translateY(100%);
-}
-
-/* Active class that slides the element into view */
-.slide-element.active {
-  transform: translateX(0) translateY(0);
-  opacity: var(--end-opacity);
-}
