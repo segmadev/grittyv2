@@ -71,7 +71,7 @@
 
       .hero-images-highlight {
         top: -10px;
-        left: -20px;
+        left: 20px;
       }
   }
   
@@ -110,5 +110,15 @@
     .hero .links, .hero .links a {
       display: block!important;
       margin-top: 10px;
+    }
+    .features {
+      margin-right: 60px;
+    }
+
+    .call-image {
+      margin-right: 35px;
+    }
+    .group-image {
+      margin-left: -23px;
     }
   }

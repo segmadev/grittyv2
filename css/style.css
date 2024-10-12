@@ -12,7 +12,7 @@ section{
     font-weight: 400;
   }
   @font-face {
-    font-family: "Avenir Next Cyr";
+    font-family: "Avenir Next Cyr bold";
     src: url("../assets/fonts/AvenirNextCyr-Bold.ttf");
     font-weight: 700;
   }
@@ -32,6 +32,7 @@ section{
 :root {
     /* fonts */
     --font-avenir-next-cyr: "Avenir Next Cyr";
+    --font-avenir-next-cyr-bold: "Avenir Next Cyr bold";
     --font-gilroy: "Gilroy";
     --font-abril-fatface: "Abril Fatface",
   /* font weight */
@@ -58,7 +59,7 @@ section{
     --font-size-lg: 1.125rem; /* 18px */
     --font-size-5xl: 1.5rem; /* 24px */
     --font-size-lgi: 1.1875rem; /* 19px */
-    --font-size-45xl: 4rem; /* 64px */
+    --font-size-45xl: 3.5rem; /* 64px */
     --font-size-19xl: 2.375rem; /* 38px */
     --font-size-32xl: 3.1875rem; /* 51px */
     --font-size-mini: 0.9375rem; /* 15px */
@@ -216,9 +217,10 @@ section{
   }
  
   h1 {
-    font-family: var(--font-gilroy);
+    font-family: var(--font-avenir-next-cyr-bold);
     font-size: var(--font-size-45xl);
     font-weight: var(--font-weight-bold);
+
   }
 
   h2 {
@@ -254,13 +256,28 @@ h3 {
   .container {
     padding: 20px;
   }
-  
+  .keypoint {
+    position: relative;
+  }
+  .keypoint::after {
+    content: '';
+    background-image: url('../assets/images/keypoint.png');
+    width: 120px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: green; */
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+  }
   /* hero section */
   .hero {
     background-color: var(--primary-1);
-    background-position: 0;
+    background-position: -470px -180px;
+    /* background-position-x: 100px; */
     /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     color: white;
   }
 
@@ -270,7 +287,7 @@ h3 {
   .hero-images-highlight {
     position: absolute;
     top: -10px;
-    left: 80px;
+    left: 70px;
     z-index: 2;
     width: 50px;
   }
@@ -551,12 +568,18 @@ h3 {
 button, input {
   border: none;
 }
-.form button {
-  margin-left: -50px;
+
+.sub-form button {
+  right: 5px;
+  top: 5px;
+  position: absolute;
 }
 
-.from input {
+.sub-form input {
+  position: relative;
   min-width: 100%;
+  width: 100%;
+  padding-left: 20px!important;
 }
 
 .accordion, .accordion > * {
@@ -654,8 +677,8 @@ button, input {
 }
 
 .roadmap .col p {
-  font-size: small;
-  font-weight: bold;
+  font-size: 14px;
+  /* font-weight: bold; */
 }
 .roadmap ul li {
     list-style: decimal;
@@ -715,9 +738,9 @@ button, input {
 .options > * {
   padding: 5px 20px;
   background-color: var(--color-white);
-  color: var(--color-gray-60);
-  opacity: 0.7;
-  border-left: 4px solid rgb(181, 181, 181) ;
+  color: rgb(212, 212, 212);
+  /* opacity: 0.1; */
+  border-left: 4px solid rgb(212, 212, 212);
   font-size: small;
   font-weight: 400;
   cursor: pointer;
