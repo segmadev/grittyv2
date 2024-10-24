@@ -121,4 +121,12 @@
     .group-image {
       margin-left: -23px;
     }
+
+    .sub-form button {
+      scale: 0.7;
+      right: -12px;
+    }
+    .sub-form .input {
+      padding: 5px 40px;
+    }
   }
