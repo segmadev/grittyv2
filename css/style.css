@@ -33,7 +33,7 @@ section{
     /* fonts */
     --font-avenir-next-cyr: "Avenir Next Cyr";
     --font-avenir-next-cyr-bold: "Avenir Next Cyr bold";
-    --font-gilroy: "Gilroy";
+    --font-gilroy: "Avenir Next Cyr bold";
     --font-abril-fatface: "Abril Fatface",
   /* font weight */
   --font-weight-bold: 700;
@@ -64,7 +64,7 @@ section{
     --font-size-32xl: 3.1875rem; /* 51px */
     --font-size-mini: 0.9375rem; /* 15px */
     --font-size-mid: 1.0625rem; /* 17px */
-    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-xl: 1.0rem; /* 20px */
     --font-size-base: 1rem; /* 16px */
     --font-size-13xl: 2rem; /* 32px */
     --font-size-7xl: 1.625rem; /* 26px */
@@ -207,7 +207,7 @@ section{
 
 
   body {
-    font-family: "Abril Fatface", serif;
+    font-family: var(--font-avenir-next-cyr), serif;
   }
   a{
     text-decoration: none;
@@ -678,7 +678,6 @@ button, input {
 
 .roadmap .col p {
   font-size: 14px;
-  /* font-weight: bold; */
 }
 .roadmap ul li {
     list-style: decimal;
@@ -761,3 +760,31 @@ button, input {
   width: 10px;
 }
 
+/* Loading overlay style */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
